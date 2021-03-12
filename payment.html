@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Payment Gateway</title>
+	<style>
+		.form-style{
+			background-color:black;
+			padding:20 px;
+			border:1 px gray;
+			text-color:white;
+		}
+	</style>
+</head>
+<body>
+	<h2>User Details</h2>
+	<br>
+	<form action=" " method="get">
+	<label for="fname">Name:* </label>
+	<input type="text" id="fname" name="" required>
+	<br>
+	<br>
+	<fieldset>
+		<label for="g">Gender: </label>
+		<br>
+		Male<input type="radio" id="g" name="gender">
+		<br>
+		Female<input type="radio" id="g" name="gender">
+		<br>
+		Other
+		<input type="radio" id="g" name="gender">
+		<br>
+	</fieldset>
+	<br>
+	Address:
+	<textarea cols="90" rows="10" id="address" name=""></textarea>
+	<br>
+	<br>
+	<label for="email">Email:* </label>
+	<input type="email" id="email" name="" required>
+	<br>
+	<br>
+	<label for="password">Password:*</label>
+	<input type="password" id="password" name="" required>
+	<br>
+	<br>
+	<label for="pincode">Pincode: </label>
+	<input type="number" id="pincode" name="">
+	</form>
+	<br>
+	<br>
+	<h2>Payment Details</h2>
+	<br>
+	<form action=" " method="get">
+	Card Type:*
+	<select>
+	<option value="">--Select a Card Type--</option>
+	<option value="visa" required>Visa</option>
+	<option value="mastercard" required>Mastercard</option>
+	</select>
+	<br>
+	<br>
+	<label for="cn">Card Number: *</label>
+	<input type="number" id="cn" name="" required>
+	<br>
+	<br>
+	<label for="ed">Expiration Date:* </label>
+	<input type="date" id="ed" name="" required>
+	<br>
+	<br>
+	<label for="cvv">CVV:* </label>
+	<input type="password" id="cvv" name="" required>
+	<br>
+	<br>
+	<input type="submit" value="Pay Now">
+	</form>
+</body>
+</html>
